@@ -2,13 +2,15 @@
 """
 Lockboxes
 """
+
+
 def canUnlockAll(boxes):
     if not boxes:
         return False
 
     n = len(boxes)
     opened = set([0])
-    keys = [0]  
+    keys = [0]
 
     while keys:
         current_key = keys.pop()
